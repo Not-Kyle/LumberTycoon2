@@ -1,0 +1,8 @@
+local coryu = {
+    ['LocalPlayer'] = game:GetService('Players').LocalPlayer;
+    ['LightSource'] = Instance.new("PointLight");
+    ['LightRange'] = 50;
+}
+
+coryu['LightSource'].Range = coryu['LightRange']
+coryu['LightSource'].Parent = coryu['LocalPlayer'].Character:WaitForChild('HumanoidRootPart')
